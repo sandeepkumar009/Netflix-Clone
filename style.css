@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.separation{
+    height: 7px;
+}
+body{
+    font-family: sans-serif;
+    background-color: gray;
+}
+.main{
+    height: 100vh;
+    background-image: url(assest/img/img1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main .box{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+nav{
+    padding-top: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    position: relative;
+    z-index: 1;
+}
+nav button{
+    position: relative;
+    z-index: 1;
+}
+.her{
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+.hero{
+    margin: auto;
+    height: calc(100% - 60px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 25px;
+    padding: 0 30px;
+    text-align: center;
+}
+.hero> :first-child{
+    font-size: 48px;
+    font-weight: 900;
+}
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+}
+.btn{
+    color: white;
+}
+.btn-lang{
+    padding: 7px 13px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.508);
+    background-color: rgba(23, 23, 23, 0.7);
+}
+.btn-red-sm{
+    padding: 7px 13px;
+    background-color: red;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 7px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.btn-red{
+    padding: 10px 20px;
+    background-color: red;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 7px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.intput{
+    width: 350px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 7px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.427);
+    color: white;
+}
+.hero-btn{
+    display: flex;
+    gap: 10px;
+}
+
+.mid2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.first{
+    background-color: black;
+}
+
+.secimg{
+    position: relative;
+    width: 37.5vw;
+}
+
+.secimg img{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.first .secimg video{
+    position: absolute;
+    top: 21%;
+    left: 13.5%;
+    width: 27vw;
+}
+.text1{
+    width: 37.5vw;
+}
+.text1 :first-child{
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+.text1 :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+.third .secimg video{
+    position: absolute;
+    top: 8.5%;
+    left: 13.5%;
+    width: 27vw;
+    scale: 85%;
+}
+.faq{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+}
+.faq h2{
+    font-size: 48px;
+    font-weight: 900;
+}
+.faqbox{
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    padding: 34px;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.faqbox:hover{
+    background-color: #414141;
+}
+h3{
+    font-size: 16px;
+    margin: 30px 0 10px 0;
+}
+.faq-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer{
+    font-size: 14px;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    padding: 50px 0px;
+}
+.footer1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer1 div{
+    padding: 10px 0;
+}
+.f1{
+    padding: 20px 0;
+}
+.fl1{
+    padding: 20px 0;
+}
+.fl2{
+    padding: 20px 0;
+}
+footer a{
+    color: white;
+    cursor: pointer;
+}
+
+
+.mid{
+    padding: 80px 40px;
+    width: calc(100vw - 80px);
+    margin: auto;
+}
+@media screen and (min-width: 1280px) {
+    .mid{
+        max-width: 75vw;
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .mid2{
+        flex-direction: column;
+    }
+}
